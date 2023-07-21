@@ -1,59 +1,108 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  background-color: #010101;
+    padding: 0;
+    margin: 0;
+    background-color: #010101;
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    max-width: 100%;
 }
 
 .page {
-  background-color: rgb(35, 35, 35);
+    background-color: #222;
 }
 
 .header {
-  background-color: #010101;
-  color: #fff;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  text-align: center;
+    background-color: #010101;
+    color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
 }
 
 .innerpage {
-  background-color: #fff;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 1rem;
-  min-height: 100vh;
+    background-color: #eee;
+    color: #222;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+    min-height: 100vh;
 }
 
 .navHolder {
-  background-color: #010101;
-  color: #fff;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
 }
 
 .nav {
-  max-width: 960px;
-  margin: 0 auto;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .nav li a {
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery .imageCompareBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery .imageCompareBlock .originalImage,
+.gallery .imageCompareBlock .aiImage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.gallery .imageCompareBlock .originalImage::before,
+.gallery .imageCompareBlock .aiImage::before {
+    width: 100%;
+}
+
+.gallery .imageCompareBlock .originalImage::before {
+    content: "Original Image";
+}
+
+.gallery .imageCompareBlock .aiImage::before {
+    content: "AI Image";
+}
+
+.gallery .imageCompareBlock .originalImage img,
+.gallery .imageCompareBlock .aiImage img {
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+    height: auto;
 }
