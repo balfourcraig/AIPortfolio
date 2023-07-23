@@ -84,6 +84,7 @@ img {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 1rem;
+    border-top: 2px solid #888;
 }
 
 .gallery .imageCompareBlock .originalImage::before,
@@ -95,9 +96,16 @@ img {
     content: "Original Image";
 }
 
-.gallery .imageCompareBlock .aiImage::before {
-    content: "AI Image";
+.gallery .imageCompareBlock label {
+    width: 100%;
+    color: #444;
+    font-size: 2em;
+    font-weight: bold;
 }
+
+/* .gallery .imageCompareBlock .aiImage::before {
+    content: "AI Image";
+} */
 
 .gallery .imageCompareBlock .originalImage img,
 .gallery .imageCompareBlock .aiImage img {
