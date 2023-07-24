@@ -37,8 +37,6 @@ img {
 .navHolder {
     background-color: #222;
     color: #fff;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     text-align: center;
 }
 
@@ -57,12 +55,22 @@ img {
     justify-content: space-between;
 }
 
+.nav ul li {
+    flex-grow: 1;
+    background-color: #222;
+}
+
 .nav li a {
     display: block;
-    color: #fff;
+    color: #eee;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+.nav li a.selected {
+    background-color: #000;
+    color: #fff;
 }
 
 .gallery {
