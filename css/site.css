@@ -73,6 +73,23 @@ img {
     color: #fff;
 }
 
+.footerHolder {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #222;
+    color: #aaa;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+}
+
 .gallery {
     display: flex;
     flex-direction: column;
